@@ -6,7 +6,7 @@ class BalanceEditor(BalanceEditorInterface):
         self.__user_repository = user_repository
         
     def edit(self,user_id:int,balance:float) -> dict:
-        self.__user_repository.update_balance(user_id,balance)
+        self.__user_repository.edit_balance(user_id,balance)
         return {
             "type": "User",
             "count": 1,
